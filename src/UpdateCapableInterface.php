@@ -17,9 +17,9 @@ interface UpdateCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param ContainerInterface         $data      A container of the data mappings to update.
-     * @param LogicalExpressionInterface $condition Optional condition which, if specified, restricts the affected
-     *                                              records to those that satisfy this condition.
+     * @param ContainerInterface              $data      A container of the data mappings to update.
+     * @param LogicalExpressionInterface|null $condition An optional condition which, if specified, restricts the
+     *                                                   affected records to those that satisfy this condition.
      *
      * @return int The number of affected records.
      */

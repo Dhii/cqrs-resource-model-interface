@@ -2,6 +2,7 @@
 
 namespace Dhii\Storage\Resource;
 
+use Psr\Container\ContainerInterface;
 use Traversable;
 
 /**
@@ -16,10 +17,10 @@ interface InsertCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param Traversable $data A traversable list of container instances, each containing the data to insert for a
-     *                          single record.
+     * @param ContainerInterface[]|Traversable $data A traversable list of container instances, each containing the
+     *                                               data to for a single record.
      *
-     * @return Traversable The list of inserted IDs.
+     * @return Traversable The list containing the IDs of the inserted records.
      */
     public function insert($data);
 }
