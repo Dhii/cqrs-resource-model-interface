@@ -4,8 +4,186 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "36b281a5f1efd96e9d756a7546c08d0b",
-    "packages": [],
+    "content-hash": "75ca529d33405a31a20919a2cf1b7144",
+    "packages": [
+        {
+            "name": "dhii/data-key-value-aware-interface",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/data-key-value-aware-interface.git",
+                "reference": "220232bc9040fab78a6c039f5a4a5f9542317bdc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/data-key-value-aware-interface/zipball/220232bc9040fab78a6c039f5a4a5f9542317bdc",
+                "reference": "220232bc9040fab78a6c039f5a4a5f9542317bdc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "4.*",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Data\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces that aim to increase interoperability of value objects",
+            "time": "2017-01-21T17:35:30+00:00"
+        },
+        {
+            "name": "dhii/evaluable-interface",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/evaluable-interface.git",
+                "reference": "da21c1a22cf0e49d5b05e93937928887657e49ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/evaluable-interface/zipball/da21c1a22cf0e49d5b05e93937928887657e49ed",
+                "reference": "da21c1a22cf0e49d5b05e93937928887657e49ed",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/data-key-value-aware-interface": "^0.1",
+                "php": "^5.3.9 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Evaluable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Increasing interoperability for objects that can be evaluated",
+            "time": "2017-01-21T18:30:17+00:00"
+        },
+        {
+            "name": "dhii/expression-interface",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/expression-interface.git",
+                "reference": "ac1fb00c039fb33ed9476a0f141072b8b3adb6c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/expression-interface/zipball/ac1fb00c039fb33ed9476a0f141072b8b3adb6c5",
+                "reference": "ac1fb00c039fb33ed9476a0f141072b8b3adb6c5",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/evaluable-interface": "^0.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Expression\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interoperable interfaces for representing expressions.",
+            "time": "2017-01-23T14:04:21+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "codeclimate/php-test-reporter",
@@ -489,16 +667,16 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "3d478c5f9e8bb02b484a3fdc82693a460d7ee268"
+                "reference": "730b01bc3e867237eaac355e06a36b85dd93a8b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/3d478c5f9e8bb02b484a3fdc82693a460d7ee268",
-                "reference": "3d478c5f9e8bb02b484a3fdc82693a460d7ee268",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/730b01bc3e867237eaac355e06a36b85dd93a8b4",
+                "reference": "730b01bc3e867237eaac355e06a36b85dd93a8b4",
                 "shasum": ""
             },
             "require": {
@@ -532,7 +710,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2017-11-27T07:49:00+00:00"
+            "time": "2017-11-27T13:52:08+00:00"
         },
         {
             "name": "phpunit/php-text-template",
