@@ -4,6 +4,7 @@ namespace Dhii\Storage\Resource;
 
 use Dhii\Expression\LogicalExpressionInterface;
 use Psr\Container\ContainerInterface;
+use Traversable;
 
 /**
  * Something that can update records in storage.
@@ -17,11 +18,11 @@ interface UpdateCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param ContainerInterface              $data      A container of the data mappings to update.
+     * @param array                           $changeSet An array of changes, mapping field name to changed value.
      * @param LogicalExpressionInterface|null $condition An optional condition which, if specified, restricts the
      *                                                   affected records to those that satisfy this condition.
      *
      * @return int The number of affected records.
      */
-    public function update(ContainerInterface $data, LogicalExpressionInterface $condition = null);
+    public function update(array $changeSet, LogicalExpressionInterface $condition = null);
 }

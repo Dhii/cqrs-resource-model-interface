@@ -17,10 +17,9 @@ interface InsertCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param ContainerInterface[]|Traversable $data A traversable list of container instances, each containing the
-     *                                               data to for a single record.
+     * @param array $records An array of record data sets, each mapping field name to value.
      *
      * @return Traversable The list containing the IDs of the inserted records.
      */
-    public function insert($data);
+    public function insert(array $records);
 }
