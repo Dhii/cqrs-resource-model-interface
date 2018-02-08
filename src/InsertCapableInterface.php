@@ -2,7 +2,9 @@
 
 namespace Dhii\Storage\Resource;
 
+use ArrayAccess;
 use Psr\Container\ContainerInterface;
+use stdClass;
 use Traversable;
 
 /**
@@ -17,9 +19,9 @@ interface InsertCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param array $records An array of record data sets, each mapping field name to value.
+     * @param array[]|ArrayAccess|stdClass|ContainerInterface|Traversable $records A list of record data containers.
      *
      * @return Traversable The list containing the IDs of the inserted records.
      */
-    public function insert(array $records);
+    public function insert($records);
 }
