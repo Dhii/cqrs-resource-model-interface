@@ -23,6 +23,7 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/evaluable-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/expression-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/type-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/validation-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -69,6 +70,7 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/evaluable-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/expression-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/type-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/validation-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
