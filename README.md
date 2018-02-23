@@ -8,23 +8,22 @@
 
 Interfaces for a CQRS approach to resource models.
 
-[Dhii]: https://github.com/Dhii/dhii
+## Interfaces
+- [`SelectCapableInterface`][SelectCapableInterface] - Interface for objects that can retrieve records from storage,
+optionally limiting the result to only records that satisfy a given condition represented as an arbitrary tree of [expressions][dhii/expression-interface].
+- [`InsertCapableInterface`][InsertCapableInterface] - Interface for objects that can insert one or more records into storage.
+Various container types are supported.
+- [`UpdateCapableInterface`][UpdateCapableInterface] - Interface for objects that can update records in storage,
+optionally limited to records that satisfy a given condition represented as an arbitrary tree of [expressions][dhii/expression-interface].
+- [`DeleteCapableInterface`][DeleteCapableInterface] - Interface for objects that can delete records from storage,
+optionally limited to records that satisfy a given condition represented as an arbitrary tree of [expressions][dhii/expression-interface].
 
-## Details
 
-[`SelectCapableInterface`] - Interface for objects that can retrieve records from storage, optionally limiting the
-result to only records that satisfy a given condition.
+[Dhii]:                                                   https://github.com/Dhii/dhii
+[CQRS]:                                                   https://martinfowler.com/bliki/CQRS.html
+[dhii/expression-interface]:                              https://packagist.org/packages/dhii/expression-interface
 
-[`InsertCapableInterface`] - Interface for objects that can insert one or more records into storage. Various container
-types are supported.
-
-[`UpdateCapableInterface`] - Interface for objects that can update records in storage, optionally limited to records
-that satisfy a given condition.
-
-[`DeleteCapableInterface`] - Interface for objects that can delete records from storage, optionally limited to records
-that satisfy a given condition.
-
-[`SelectCapableInterface`]: src/SelectCapableInterface.php
-[`InsertCapableInterface`]: src/InsertCapableInterface.php
-[`UpdateCapableInterface`]: src/UpdateCapableInterface.php
-[`DeleteCapableInterface`]: src/DeleteCapableInterface.php
+[SelectCapableInterface]:                                 src/SelectCapableInterface.php
+[InsertCapableInterface]:                                 src/InsertCapableInterface.php
+[UpdateCapableInterface]:                                 src/UpdateCapableInterface.php
+[DeleteCapableInterface]:                                 src/DeleteCapableInterface.php
