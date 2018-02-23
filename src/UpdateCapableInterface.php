@@ -3,7 +3,6 @@
 namespace Dhii\Storage\Resource;
 
 use Dhii\Expression\LogicalExpressionInterface;
-use Dhii\Expression\TermInterface;
 use Traversable;
 
 /**
@@ -18,8 +17,13 @@ interface UpdateCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param array|TermInterface[]|Traversable changeSet The change set, mapping field names to their new values or
-     *                                                    value expressions.
+     * @param array|Traversable               $changeSet  The change set, mapping field names to their new values.
+     *                                                    Accepted value types are:
+     *                                                    * int
+     *                                                    * float
+     *                                                    * string
+     *                                                    * bool
+     *                                                    * Dhii\Expression\TermInterface
      * @param LogicalExpressionInterface|null $condition  An optional condition which, if specified, restricts the
      *                                                    affected records to those that satisfy this condition.
      *

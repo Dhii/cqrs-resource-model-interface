@@ -2,9 +2,6 @@
 
 namespace Dhii\Storage\Resource;
 
-use ArrayAccess;
-use Psr\Container\ContainerInterface;
-use stdClass;
 use Traversable;
 
 /**
@@ -19,7 +16,11 @@ interface InsertCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param array[]|ArrayAccess|stdClass|ContainerInterface|Traversable $records A list of record data containers.
+     * @param array|Traversable $records A list of records data containers. Accepted container types are:
+     *                                   * array
+     *                                   * ArrayAccess
+     *                                   * stdClass
+     *                                   * Psr\Container\ContainerInterface
      *
      * @return Traversable The list containing the IDs of the inserted records.
      */
