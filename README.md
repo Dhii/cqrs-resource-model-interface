@@ -12,13 +12,17 @@ Interfaces for a CQRS approach to resource models.
 
 ## Details
 
-[`SelectCapableInterface`] - Interface for objects that can retrieve records from storage.
+[`SelectCapableInterface`] - Interface for objects that can retrieve records from storage, optionally limiting the
+result to only records that satisfy a given condition.
 
-[`InsertCapableInterface`] - Interface for objects that can insert records into storage.
+[`InsertCapableInterface`] - Interface for objects that can insert one or more records into storage. Various container
+types are supported.
 
-[`UpdateCapableInterface`] - Interface for objects that can update records in storage.
+[`UpdateCapableInterface`] - Interface for objects that can update records in storage, optionally limited to records
+that satisfy a given condition.
 
-[`DeleteCapableInterface`] - Interface for objects that can delete records from storage.
+[`DeleteCapableInterface`] - Interface for objects that can delete records from storage, optionally limited to records
+that satisfy a given condition.
 
 [`SelectCapableInterface`]: src/SelectCapableInterface.php
 [`InsertCapableInterface`]: src/InsertCapableInterface.php
