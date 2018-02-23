@@ -9,3 +9,18 @@
 Interfaces for a CQRS approach to resource models.
 
 [Dhii]: https://github.com/Dhii/dhii
+
+## Details
+
+[`SelectCapableInterface`] - Interface for objects that can retrieve records from storage.
+
+[`InsertCapableInterface`] - Interface for objects that can insert records into storage.
+
+[`UpdateCapableInterface`] - Interface for objects that can update records in storage.
+
+[`DeleteCapableInterface`] - Interface for objects that can delete records from storage.
+
+[`SelectCapableInterface`]: src/SelectCapableInterface.php
+[`InsertCapableInterface`]: src/InsertCapableInterface.php
+[`UpdateCapableInterface`]: src/UpdateCapableInterface.php
+[`DeleteCapableInterface`]: src/DeleteCapableInterface.php
