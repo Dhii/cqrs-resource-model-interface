@@ -6,7 +6,7 @@
 [![Latest Stable Version](https://poser.pugx.org/dhii/cqrs-resource-model-interface/version)](https://packagist.org/packages/dhii/cqrs-resource-model-interface)
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
-Interfaces for a CQRS approach to resource models.
+Interfaces for a [CQRS][] approach to resource models.
 
 ## Interfaces
 - [`SelectCapableInterface`][SelectCapableInterface] - Interface for objects that can retrieve records from storage,
