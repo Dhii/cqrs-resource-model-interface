@@ -2,6 +2,7 @@
 
 namespace Dhii\Storage\Resource;
 
+use Dhii\Storage\Resource\Sql\OrderInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
 use Dhii\Expression\LogicalExpressionInterface;
 use Dhii\Expression\TermInterface;
@@ -20,12 +21,16 @@ interface UpdateCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param int[]|float[]|string[]|Stringable|bool[]|TermInterface[]|Traversable|stdClass $changeSet The change set, mapping field names to their new values.
-     *                                                                                                 The values don't have to be all of the same type.
-     * @param LogicalExpressionInterface|null                                               $condition An optional condition which, if specified, restricts the
-     *                                                                                                 affected records to those that satisfy this condition.
+     * @param array|TermInterface[]|Traversable|stdClass $changeSet The change set, mapping field names to their new
+     *                                                              values. The values don't have to be all of the same
+     *                                                              type.
+     * @param LogicalExpressionInterface|null            $condition An optional condition which, if specified, restricts
+     *                                                              the affected records to those that satisfy this
+     *                                                              condition.
+     * @param OrderInterface[]|stdClass|Traversable|null $ordering  The ordering, as a list of `OrderInterface` objects.
+     * @param int|float|string|Stringable|null           $limit     The number of records to limit the query to.
      *
      * @return int The number of affected records.
      */
-    public function update($changeSet, LogicalExpressionInterface $condition = null);
+    public function update($changeSet, LogicalExpressionInterface $condition = null, $ordering = null, $limit = null);
 }
