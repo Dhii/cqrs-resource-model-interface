@@ -18,6 +18,30 @@ optionally limited to records that satisfy a given condition represented as an a
 - [`DeleteCapableInterface`][DeleteCapableInterface] - Interface for objects that can delete records from storage,
 optionally limited to records that satisfy a given condition represented as an arbitrary tree of [expressions][dhii/expression-interface].
 
+## Usage
+```php
+use Dhii\Storage\Resource\SelectCapableInterface;
+
+/* @var $select SelectCapableInterface */
+$results = $select->select();
+
+/* The below would go through each element of the result set, and,
+ * if the 'age' field is greater than 18, output all of the names
+ * and values of all fields.
+ */
+foreach ($results as $_result) {
+  if ((int) $_result->get('age') < 18) {
+    continue;
+  }
+  
+  foreach ($_result as $_field => $_value) {
+    echo sprintf('%1$s: %2$s', $_field, $_value) . "\n";
+  }
+  
+  echo "---';
+}
+```
+
 
 [Dhii]:                                                   https://github.com/Dhii/dhii
 [CQRS]:                                                   https://martinfowler.com/bliki/CQRS.html
