@@ -2,6 +2,7 @@
 
 namespace Dhii\Storage\Resource;
 
+use Dhii\Collection\MapInterface;
 use Dhii\Expression\LogicalExpressionInterface;
 use Dhii\Storage\Resource\Sql\OrderInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
@@ -29,7 +30,7 @@ interface SelectCapableInterface
      * @param int|float|string|Stringable|null           $limit     The number of records to limit the query to.
      * @param int|float|string|Stringable|null           $offset    The number of records to offset by, zero-based.
      *
-     * @return ContainerInterface[]|Traversable A list of containers, each containing the data for a single record.
+     * @return MapInterface[]|stdClass|Traversable A list containing each record's data map as elements.
      */
     public function select(
         LogicalExpressionInterface $condition = null,
