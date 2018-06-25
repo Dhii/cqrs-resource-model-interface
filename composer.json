@@ -30,6 +30,12 @@
             "Dhii\\Storage\\Resource\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Storage\\Resource\\UnitTest": "test/unit",
+            "Dhii\\Storage\\Resource\\FuncTest": "test/functional"
+        }
+    },
     "suggest": {
         "dhii/expression-interface": "To create query conditions and value expressions.",
         "dhii/stringable-interface": "To pass stringable objects in place of strings."
