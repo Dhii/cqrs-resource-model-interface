@@ -22,6 +22,7 @@ optionally limited to records that satisfy a given condition represented as an a
 ## Usage
 ```php
 use Dhii\Storage\Resource\SelectCapableInterface;
+use Dhii\Collection\MapInterface;
 
 /* @var $select SelectCapableInterface */
 $results = $select->select();
@@ -31,6 +32,7 @@ $results = $select->select();
  * and values of all fields.
  */
 foreach ($results as $_result) {
+  /* @var $_result MapInterface */
   if ((int) $_result->get('age') < 18) {
     continue;
   }
@@ -39,7 +41,7 @@ foreach ($results as $_result) {
     echo sprintf('%1$s: %2$s', $_field, $_value) . "\n";
   }
   
-  echo "---';
+  echo "---' . "\n";
 }
 ```
 
