@@ -32,8 +32,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Storage\\Resource\\UnitTest": "test/unit",
-            "Dhii\\Storage\\Resource\\FuncTest": "test/functional"
+            "Dhii\\Storage\\Resource\\UnitTest\\": "test/unit",
+            "Dhii\\Storage\\Resource\\FuncTest\\": "test/functional"
         }
     },
     "suggest": {
